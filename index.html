@@ -33,8 +33,10 @@
   <link rel="stylesheet" href="plugins/slick/slick.css">
   <!-- Main Stylesheet -->
   <link rel="stylesheet" href="css/style.css">  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
 
-  <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+<script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
 
 </head>
 
@@ -84,7 +86,23 @@ Fixed Navigation
             <a class="nav-link" href="#">Services</a>
           </li>
             <li class="nav-item ">
-            <a class="nav-link" href="mailto:info@rino27.com">Resources</a>
+            <a class="nav-link" href="blog/">Resources</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" onclick="onCareersClick()" href="blog/" style="position: relative;">Careers<style type="text/css">
+              
+            @keyframes blink {
+              0% {
+                opacity: 1;
+              }
+              50% {
+                opacity: 0;
+              }
+              100% {
+                opacity: 1;
+              }
+            }
+            </style><span  id="careersDotButton"  id="" style="position: relative; top: -8px; /*! right: -5px; */ display: inline-block; height: 8px; width: 8px; background-color: lime; border-radius: 50%; animation: blink 1s infinite;"></span></a>
           </li>
             <li class="nav-item ">
             <a class="nav-link" href="mailto:info@rino27.com">About Us</a>
@@ -112,7 +130,7 @@ End Fixed Navigation
 					<p data-duration-in=".3" data-animation-in="fadeInUp" data-delay-in=".5">Unlock the full potential of your online presence<br> with our cutting-edge web development services
 					<br>Let us transform your ideas <br>into stunning digital experiences.
 					 </p>
-					<a data-duration-in=".3" data-animation-in="fadeInUp" data-delay-in=".8" class="btn btn-main" href="./RINO-DIGITAL.pdf">Read more</a>
+					<a data-duration-in=".3" data-animation-in="fadeInUp" data-delay-in=".8" class="btn btn-main" href="blog/">Read more</a>
 				</div>
 			</div>
 		</div>
@@ -123,7 +141,7 @@ End Fixed Navigation
 				<div class="col-md-12 text-center">
 					<h1 data-duration-in=".3" data-animation-in="fadeInDown" data-delay-in=".1">Navigating the Digital Frontier<br> Together</h1>
 					<p data-duration-in=".3" data-animation-in="fadeInDown" data-delay-in=".5">Join us on a journey of exploration and innovation.<br> Our diverse range of services adapts to the ever-shifting landscape of the digital world.<br> Together, let's navigate new horizons and embrace the endless possibilities of the digital age.</p>
-					<a data-duration-in=".3" data-animation-in="fadeInDown" data-delay-in=".8"  class="btn btn-main" href="./RINO-DIGITAL.pdf">Read more</a>
+					<a data-duration-in=".3" data-animation-in="fadeInDown" data-delay-in=".8"  class="btn btn-main" href="blog/">Read more</a>
 				</div>
 			</div>
 		</div>
@@ -137,12 +155,30 @@ End Fixed Navigation
 Start About Section
 ==================================== -->
 <section class="service-2 section">
+   <div class="carousel-wrapper">
+         <div class="owl-carousel owl-theme">
+          <div class="item"><img style="width: 70%;height: auto;" src="images/logo-brands/nvidia.png" alt="Image 1"></div>
+          <div class="item"><img style="width: 70%;height: auto;" src="images/logo-brands/nodejs.png" alt="Image 2"></div>
+          <div class="item"><img style="width: 70%;height: auto;" src="images/logo-brands/java.png" alt="Image 3"></div>
+          <div class="item"><img style="width: 70%;height: auto;" src="images/logo-brands/facebook.png" alt="Image 4"></div>
+          <div class="item"><img style="width: 70%;height: auto;" src="images/logo-brands/bitcoin.png" alt="Image 4"></div>
+          <div class="item"><img style="width: 70%;height: auto;" src="images/logo-brands/googleads.png" alt="Image 4"></div>
+          <div class="item"><img style="width: 70%;height: auto;" src="images/logo-brands/github.png" alt="Image 4"></div>
+          <div class="item"><img style="width: 70%;height: auto;" src="images/logo-brands/kubes.png" alt="Image 4"></div>
+          <!-- Add more slides as needed -->
+        </div>
+        </div>
   <div class="container">
     <div class="row">
 
       <div class="col-12">
+       
+    
         <!-- section title -->
         <div class="title text-center">
+
+            <!-- carousel scroller -->
+
           <h2>Explore Our Services</h2>
           <p>Discover what sets us apart! We offer a variety of services designed to meet your needs, from sleek websites to robust applications. Our goal is to provide you with exceptional solutions that stand out in today's competitive market. </p>
           <div class="border"></div>
@@ -151,12 +187,20 @@ Start About Section
       </div>
 
       <div class="col-md-4 text-center">
+        <script src="https://price-static.crypto.com/latest/public/static/widget/index.js"></script>
+            <div
+              id="crypto-widget-CoinList"
+              
+              
+              data-design="classic"
+              data-coin-ids="1,166,1986"></div>
+
         <img src="images/about/member.jpg" class="inline-block" alt="">
       </div>
       <div class="col-md-8">
         <div class="row text-center">
           <div class="col-md-6 col-sm-6 col-xs-12">
-           <a href="#"> <div class="service-item">
+           <a href="blog/"> <div class="service-item">
               <i><iconify-icon style="font-size: 39px;position: relative;top: 7px;" icon="fluent-mdl2:website"></iconify-icon></i>
               <h4>Web Development</h4>
               <p>Trusting a company that has a strong web presence is quicker.
@@ -164,14 +208,16 @@ Start About Section
             </div></a>
           </div><!-- END COL -->
           <div class="col-md-6 col-sm-6 col-xs-12">
-            <div class="service-item">
+            <a href="blog/"><div class="service-item">
               <i ><iconify-icon style="font-size: 35px;position: relative;top: 7px;" icon="eos-icons:blockchain"></iconify-icon></i>
               <h4>Web3</h4>
               <p>A new generation of the Internet is expected to emerge with the advancement of web technologies. centered on concepts for a decentralized, peer-to-peer internet and technology like public blockchains.</p>
+
+            
             </div>
           </div><!-- END COL -->
           <div class="col-md-6 col-sm-6 col-xs-12">
-            <div class="service-item">
+            <a href="blog/"><div class="service-item">
               <i ><iconify-icon icon="mdi:robot"></iconify-icon></i>
               <h4>Drones & Robotics</h4>
               <p>Power, motors, and parts are necessary for the next logical field of radical developments.
@@ -179,12 +225,11 @@ Start About Section
             </div>
           </div><!-- END COL -->
           <div class="col-md-6 col-sm-6 col-xs-12">
-            <div class="service-item">
-              <i><iconify-icon style="font-size: 35px;position: relative;top: 7px;"  icon="iconoir:vr-symbol"></iconify-icon></i>
-              <h4>Mixed Reality</h4>
-              <p>You want it but can't afford it.
-				the combination of real-world and 3D imagery made possible by contemporary image-processing technologies.</p>
-            </div>
+            <a href="blog/"><div class="service-item">
+              <i><iconify-icon style="font-size: 35px;position: relative;top: 7px;"  icon="iconoir:terminal-tag"></iconify-icon></i>
+              <h4>Free Coding Bootcamps</h4>
+              <p>If you're interested on a  career in tech but worried about the cost of education? Our Free coding bootcamps offer a solution. These programs provide top-notch training in the art of computer science at no cost, empowering you to gain the skills you need to excel in the tech industry without financial costs.</p>
+                          </div>
           </div><!-- END COL -->
         </div>
       </div>
@@ -192,8 +237,7 @@ Start About Section
   </div> <!-- End container -->
 </section> <!-- End section -->
 
-<!-- Sidebar pop-up -->
-<!-- Modal -->
+<!-- Sidebar pop-up --> <!-- Modal -->
 <div class="modal fade" id="Sidebar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -221,9 +265,10 @@ Start About Section
   <div class="top-footer">
     <div class="container">
       <div class="row">
-        <div class="col-sm-3 col-md-3 col-lg-3">
+        <div >
           <h3>about</h3>
           <p>Utilizing cutting-edge technology, we strive to increase our effectiveness and client satisfaction. </p>
+          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSff4NL4BS6j3jza4PO6IdieKGhOTJnuN_80l6WvP5xK-deoyA/viewform?embedded=true" width="640" height="773" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
         </div>
         <!-- End of .col-sm-3 -->
 
@@ -276,21 +321,78 @@ Start About Section
     <script src="plugins/filterizr/jquery.filterizr.min.js"></script>
     <!-- Smooth Scroll js -->
     <script src="plugins/smooth-scroll/smooth-scroll.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
     
     <!-- Custom js -->
     <script src="js/script.js"></script>
+    <script>
+      function onCareersClick(){
+        localStorage.isCareersClicked = true
+      }
 
-    
-	<!-- Google tag (gtag.js) -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-BL4H9RDS54"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
+      function checkIsCareersClicked(){
+         careersDotButton.outerHTML = localStorage.isCareersClicked =="true" ?"" : careersDotButton.outerHTML 
+      }
 
-	  gtag('config', 'G-BL4H9RDS54');
-	</script>
+      checkIsCareersClicked()
+    </script>
 
+      <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BL4H9RDS54"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-BL4H9RDS54');
+  </script>
+
+    <script>
+     $(document).ready(function(){
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        autoplay: true,
+        autoplayTimeout: 3000, // Auto scroll every 1 second
+        responsive:{
+          0:{
+            items:1
+          },
+          600:{
+            items:3
+          },
+          1000:{
+            items:5
+          }
+        }
+      });
+    });
+  </script>
+
+  <style type="text/css">
+    .carousel-wrapper {
+      display: flex;
+      justify-content: center;
+      padding-left: 8%;
+      padding-right: 8%;
+    }
+
+    .owl-carousel {
+      width: 100%;
+    }
+
+    .owl-carousel .item {
+      padding: 0 5px; /* Adjust spacing between items as needed */
+    }
+
+    .owl-carousel .item img {
+      width: 50%;
+      height: auto;
+}
+  </style>
 
   </body>
   </html>
